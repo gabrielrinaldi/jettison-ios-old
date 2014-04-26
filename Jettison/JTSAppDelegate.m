@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
+#import <NewRelicAgent/NewRelic.h>
 #import "JTSAppDelegate.h"
 
 @implementation JTSAppDelegate
@@ -16,6 +17,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [NewRelicAgent startWithApplicationToken:@"AA404ff93837ef6ca500351d34ed789f98381e02da"];
+    
     return YES;
 }
 
