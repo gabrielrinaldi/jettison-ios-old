@@ -1,0 +1,13 @@
+PODS:
+  - AzureSDK-iOS (1.2.1)
+  - Facebook-iOS-SDK (3.13.1)
+
+DEPENDENCIES:
+  - AzureSDK-iOS (~> 1.2.1)
+  - Facebook-iOS-SDK (~> 3.13.1)
+
+SPEC CHECKSUMS:
+  AzureSDK-iOS: 38f2809a39f1fdd45d612305ef25c0b024fbc776
+  Facebook-iOS-SDK: 47ae9e54684c84f93d75d4e6ab47cd031abdf406
+
+COCOAPODS: 0.32.1
