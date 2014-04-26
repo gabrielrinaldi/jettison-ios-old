@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0134332190C253F002C09D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134331190C253F002C09D2 /* Foundation.framework */; };
+		C0134334190C253F002C09D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134333190C253F002C09D2 /* CoreGraphics.framework */; };
+		C0134336190C253F002C09D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134335190C253F002C09D2 /* UIKit.framework */; };
+		C013433C190C253F002C09D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C013433A190C253F002C09D2 /* InfoPlist.strings */; };
+		C013433E190C253F002C09D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C013433D190C253F002C09D2 /* main.m */; };
+		C0134342190C253F002C09D2 /* JTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0134341190C253F002C09D2 /* JTSAppDelegate.m */; };
+		C0134344190C253F002C09D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0134343190C253F002C09D2 /* Images.xcassets */; };
+		C013434B190C253F002C09D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C013434A190C253F002C09D2 /* XCTest.framework */; };
+		C013434C190C253F002C09D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134331190C253F002C09D2 /* Foundation.framework */; };
+		C013434D190C253F002C09D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134335190C253F002C09D2 /* UIKit.framework */; };
+		C0134355190C253F002C09D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0134353190C253F002C09D2 /* InfoPlist.strings */; };
+		C0134357190C253F002C09D2 /* JettisonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0134356190C253F002C09D2 /* JettisonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C013434E190C253F002C09D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0134326190C253F002C09D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C013432D190C253F002C09D2;
+			remoteInfo = Jettison;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C013432E190C253F002C09D2 /* Jettison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jettison.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0134331190C253F002C09D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0134333190C253F002C09D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0134335190C253F002C09D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0134339190C253F002C09D2 /* Jettison-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jettison-Info.plist"; sourceTree = "<group>"; };
+		C013433B190C253F002C09D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C013433D190C253F002C09D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C013433F190C253F002C09D2 /* Jettison-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jettison-Prefix.pch"; sourceTree = "<group>"; };
+		C0134340190C253F002C09D2 /* JTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSAppDelegate.h; sourceTree = "<group>"; };
+		C0134341190C253F002C09D2 /* JTSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSAppDelegate.m; sourceTree = "<group>"; };
+		C0134343190C253F002C09D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0134349190C253F002C09D2 /* JettisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JettisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C013434A190C253F002C09D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C0134352190C253F002C09D2 /* JettisonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JettisonTests-Info.plist"; sourceTree = "<group>"; };
+		C0134354190C253F002C09D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0134356190C253F002C09D2 /* JettisonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JettisonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C013432B190C253F002C09D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0134334190C253F002C09D2 /* CoreGraphics.framework in Frameworks */,
+				C0134336190C253F002C09D2 /* UIKit.framework in Frameworks */,
+				C0134332190C253F002C09D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0134346190C253F002C09D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C013434B190C253F002C09D2 /* XCTest.framework in Frameworks */,
+				C013434D190C253F002C09D2 /* UIKit.framework in Frameworks */,
+				C013434C190C253F002C09D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0134325190C253F002C09D2 = {
+			isa = PBXGroup;
+			children = (
+				C0134337190C253F002C09D2 /* Jettison */,
+				C0134350190C253F002C09D2 /* JettisonTests */,
+				C0134330190C253F002C09D2 /* Frameworks */,
+				C013432F190C253F002C09D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C013432F190C253F002C09D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C013432E190C253F002C09D2 /* Jettison.app */,
+				C0134349190C253F002C09D2 /* JettisonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0134330190C253F002C09D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0134331190C253F002C09D2 /* Foundation.framework */,
+				C0134333190C253F002C09D2 /* CoreGraphics.framework */,
+				C0134335190C253F002C09D2 /* UIKit.framework */,
+				C013434A190C253F002C09D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0134337190C253F002C09D2 /* Jettison */ = {
+			isa = PBXGroup;
+			children = (
+				C0134340190C253F002C09D2 /* JTSAppDelegate.h */,
+				C0134341190C253F002C09D2 /* JTSAppDelegate.m */,
+				C0134343190C253F002C09D2 /* Images.xcassets */,
+				C0134338190C253F002C09D2 /* Supporting Files */,
+			);
+			path = Jettison;
+			sourceTree = "<group>";
+		};
+		C0134338190C253F002C09D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0134339190C253F002C09D2 /* Jettison-Info.plist */,
+				C013433A190C253F002C09D2 /* InfoPlist.strings */,
+				C013433D190C253F002C09D2 /* main.m */,
+				C013433F190C253F002C09D2 /* Jettison-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0134350190C253F002C09D2 /* JettisonTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0134356190C253F002C09D2 /* JettisonTests.m */,
+				C0134351190C253F002C09D2 /* Supporting Files */,
+			);
+			path = JettisonTests;
+			sourceTree = "<group>";
+		};
+		C0134351190C253F002C09D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0134352190C253F002C09D2 /* JettisonTests-Info.plist */,
+				C0134353190C253F002C09D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C013432D190C253F002C09D2 /* Jettison */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C013435A190C253F002C09D2 /* Build configuration list for PBXNativeTarget "Jettison" */;
+			buildPhases = (
+				C013432A190C253F002C09D2 /* Sources */,
+				C013432B190C253F002C09D2 /* Frameworks */,
+				C013432C190C253F002C09D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jettison;
+			productName = Jettison;
+			productReference = C013432E190C253F002C09D2 /* Jettison.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0134348190C253F002C09D2 /* JettisonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C013435D190C253F002C09D2 /* Build configuration list for PBXNativeTarget "JettisonTests" */;
+			buildPhases = (
+				C0134345190C253F002C09D2 /* Sources */,
+				C0134346190C253F002C09D2 /* Frameworks */,
+				C0134347190C253F002C09D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C013434F190C253F002C09D2 /* PBXTargetDependency */,
+			);
+			name = JettisonTests;
+			productName = JettisonTests;
+			productReference = C0134349190C253F002C09D2 /* JettisonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0134326190C253F002C09D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JTS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Jettison;
+				TargetAttributes = {
+					C0134348190C253F002C09D2 = {
+						TestTargetID = C013432D190C253F002C09D2;
+					};
+				};
+			};
+			buildConfigurationList = C0134329190C253F002C09D2 /* Build configuration list for PBXProject "Jettison" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C0134325190C253F002C09D2;
+			productRefGroup = C013432F190C253F002C09D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C013432D190C253F002C09D2 /* Jettison */,
+				C0134348190C253F002C09D2 /* JettisonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C013432C190C253F002C09D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C013433C190C253F002C09D2 /* InfoPlist.strings in Resources */,
+				C0134344190C253F002C09D2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0134347190C253F002C09D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0134355190C253F002C09D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C013432A190C253F002C09D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0134342190C253F002C09D2 /* JTSAppDelegate.m in Sources */,
+				C013433E190C253F002C09D2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0134345190C253F002C09D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0134357190C253F002C09D2 /* JettisonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C013434F190C253F002C09D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C013432D190C253F002C09D2 /* Jettison */;
+			targetProxy = C013434E190C253F002C09D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C013433A190C253F002C09D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C013433B190C253F002C09D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0134353190C253F002C09D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0134354190C253F002C09D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0134358190C253F002C09D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0134359190C253F002C09D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C013435B190C253F002C09D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
+				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C013435C190C253F002C09D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
+				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C013435E190C253F002C09D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jettison.app/Jettison";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JettisonTests/JettisonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C013435F190C253F002C09D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jettison.app/Jettison";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
+				INFOPLIST_FILE = "JettisonTests/JettisonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0134329190C253F002C09D2 /* Build configuration list for PBXProject "Jettison" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0134358190C253F002C09D2 /* Debug */,
+				C0134359190C253F002C09D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C013435A190C253F002C09D2 /* Build configuration list for PBXNativeTarget "Jettison" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C013435B190C253F002C09D2 /* Debug */,
+				C013435C190C253F002C09D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C013435D190C253F002C09D2 /* Build configuration list for PBXNativeTarget "JettisonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C013435E190C253F002C09D2 /* Debug */,
+				C013435F190C253F002C09D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0134326190C253F002C09D2 /* Project object */;
+}
