@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#pragma mark JTSAppDelegate
 
 @interface JTSAppDelegate : UIResponder <UIApplicationDelegate>
 
