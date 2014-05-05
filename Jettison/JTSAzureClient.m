@@ -9,7 +9,7 @@
 #import <UICKeyChainStore/UICKeyChainStore.h>
 #import "JTSAzureClient.h"
 
-static NSString * const kGRAAPIBaseURLString = @"https://jettison.azure-mobile.net/";
+static NSString * const kGRAAPIBaseURLString = AZURE_BASE_URL;
 
 #pragma mark JTSAzureClient
 
@@ -21,7 +21,7 @@ static NSString * const kGRAAPIBaseURLString = @"https://jettison.azure-mobile.n
     static JTSAzureClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[self alloc] initWithApplicationURL:[NSURL URLWithString:kGRAAPIBaseURLString] applicationKey:@"pHWpoQEZeJVAszzhXRnaRWqsxWjTee12"];
+        _sharedClient = [[self alloc] initWithApplicationURL:[NSURL URLWithString:kGRAAPIBaseURLString] applicationKey:AZURE_APPLICATION_KEY];
     });
     
     return _sharedClient;
@@ -84,6 +84,5 @@ static NSString * const kGRAAPIBaseURLString = @"https://jettison.azure-mobile.n
     
     [self logout];
 }
-
 
 @end

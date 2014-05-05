@@ -26,9 +26,9 @@
 #pragma mark - Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Crashlytics startWithAPIKey:@"131c48cd3aa4014211c76edd0d36ed0f0b40e5c1"];
+    [Crashlytics startWithAPIKey:CRASHLYTICS_API_KEY];
     
-    [NewRelicAgent startWithApplicationToken:@"AA404ff93837ef6ca500351d34ed789f98381e02da"];
+    [NewRelicAgent startWithApplicationToken:NEWRELIC_TOKEN];
     
     [FBLoginView class];
     

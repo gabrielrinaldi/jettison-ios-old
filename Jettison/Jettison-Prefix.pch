@@ -14,3 +14,13 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+// Keys, secrets and tokens
+
+#define CRASHLYTICS_API_KEY @"131c48cd3aa4014211c76edd0d36ed0f0b40e5c1"
+#define NEWRELIC_TOKEN @"AA404ff93837ef6ca500351d34ed789f98381e02da"
+
+// Azure settings
+
+#define AZURE_BASE_URL @"https://jettison.azure-mobile.net/"
+#define AZURE_APPLICATION_KEY @"pHWpoQEZeJVAszzhXRnaRWqsxWjTee12"
