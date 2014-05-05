@@ -4,7 +4,7 @@ inhibit_all_warnings!
 
 target 'Jettison' do
   pod 'BZGFormField', '~> 1.1.2'
-  pod 'BZGFormViewController', '~> 2.3.1'
+  pod 'BZGFormViewController', '~> 2.3.2'
   pod 'Facebook-iOS-SDK', '~> 3.13.1'
   pod 'MZFormSheetController', '~> 2.3.4'
   pod 'NewRelicAgent', '~> 3.289'
