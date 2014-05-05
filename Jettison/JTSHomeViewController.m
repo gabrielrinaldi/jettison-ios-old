@@ -17,11 +17,7 @@
 
 #pragma mark JTSHomeViewController (Private)
 
-@interface JTSHomeViewController () <JTSAddDropViewControllerDelegate, VPPLocationControllerLocationDelegate>
-
-@property (assign, nonatomic) BOOL presented;
-
-@end
+@interface JTSHomeViewController () <JTSAddDropViewControllerDelegate, VPPLocationControllerLocationDelegate> @end
 
 #pragma mark - JTSHomeViewController
 
@@ -59,8 +55,7 @@
             float distance = [[[VPPLocationController sharedInstance] currentLocation] distanceFromLocation:[drop location]];
             [[self distanceLabel] setText:[NSString stringWithFormat:@"%.0fm", distance]];
             
-            if (distance <= 10 && !self.presented) {
-                self.presented = YES;
+            if (distance <= 10) {
                 JTSDropDetailViewController *dropDetailViewController = [[JTSDropDetailViewController alloc] initWithNibName:@"JTSDropDetailViewController" bundle:nil];
                 [dropDetailViewController setDrop:drop];
                 
@@ -118,8 +113,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.presented = NO;
     
     [self setTitle:@"Jettison"];
     
