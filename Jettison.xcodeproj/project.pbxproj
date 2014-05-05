@@ -567,7 +567,7 @@
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "47F3A800-28E9-4A65-966A-6B154E24B293";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -590,7 +590,7 @@
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "90E811B0-1868-4328-B33A-D4135F3F002D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
