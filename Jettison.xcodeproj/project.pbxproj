@@ -279,6 +279,7 @@
 			buildConfigurationList = C013435A190C253F002C09D2 /* Build configuration list for PBXNativeTarget "Jettison" */;
 			buildPhases = (
 				64595137A170441A9B68DF9C /* Check Pods Manifest.lock */,
+				C015B24E19184724006B9298 /* Version bump */,
 				C013432A190C253F002C09D2 /* Sources */,
 				C013432B190C253F002C09D2 /* Frameworks */,
 				C013432C190C253F002C09D2 /* Resources */,
@@ -392,6 +393,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		C015B24E19184724006B9298 /* Version bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Version bump";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build version with number of commits\nBUILD_NUMBER=$(git rev-list HEAD | wc -l | tr -d ' ')\n\n# Set git SHA for this build\nGIT_SHA=$(git rev-parse --short HEAD)\n\n# Update version string with build number\nGIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\n\n# Update plist with new values\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleShortVersionString\" \"${GIT_RELEASE_VERSION#*v}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${BUILD_NUMBER}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"GitSHA\" \"${GIT_SHA}\"\n";
 		};
 		C03C5BEC19174C5800EDDAB8 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;

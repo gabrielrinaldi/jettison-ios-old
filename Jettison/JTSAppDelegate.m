@@ -47,6 +47,10 @@
         [[[self window] rootViewController] presentViewController:loginViewController animated:NO completion:nil];
     }
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [self updateDefaults];
+    });
+    
     return YES;
 }
 
@@ -64,6 +68,17 @@
     BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
     
     return wasHandled;
+}
+
+#pragma mark - Update defaults
+
+- (void)updateDefaults {
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
+    NSString *build = [infoDict objectForKey:@"CFBundleShortVersionString"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@ (%@)", version, build] forKey:@"version"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - Login view controller delegate
