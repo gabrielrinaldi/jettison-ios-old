@@ -74,7 +74,7 @@
         return YES;
     }];
     
-    [self setFormCells:[NSMutableArray arrayWithArray:@[ self.messageTextFieldCell, self.messageTextFieldCell ]]];
+    [self setFormCells:[NSMutableArray arrayWithArray:@[ self.messageTextFieldCell ]]];
 }
 
 - (void)dealloc {

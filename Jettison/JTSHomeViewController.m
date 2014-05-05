@@ -7,6 +7,8 @@
 //
 
 #import <FormatterKit/TTTLocationFormatter.h>
+#import <InAppSettingsKit/IASKAppSettingsViewController.h>
+#import <InAppSettingsKit/IASKSettingsReader.h>
 #import <MZFormSheetController/MZFormSheetController.h>
 #import <VPPLocation/VPPLocationController.h>
 #import "JTSDrop.h"
@@ -18,7 +20,7 @@
 
 #pragma mark JTSHomeViewController (Private)
 
-@interface JTSHomeViewController () <JTSAddDropViewControllerDelegate, VPPLocationControllerLocationDelegate> @end
+@interface JTSHomeViewController () <IASKSettingsDelegate, JTSAddDropViewControllerDelegate, VPPLocationControllerLocationDelegate> @end
 
 #pragma mark - JTSHomeViewController
 
@@ -46,6 +48,32 @@
     [formSheet presentAnimated:YES completionHandler:nil];
 }
 
+- (void)openSettings {
+    IASKAppSettingsViewController *appSettingsViewController = [[IASKAppSettingsViewController alloc] init];
+    [appSettingsViewController setDelegate:self];
+    [appSettingsViewController setShowCreditsFooter:NO];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:appSettingsViewController];
+    
+    [[MZFormSheetController sharedBackgroundWindow] setBackgroundBlurEffect:YES];
+    [[MZFormSheetController sharedBackgroundWindow] setBlurRadius:5.0];
+    [[MZFormSheetController sharedBackgroundWindow] setBackgroundColor:[UIColor clearColor]];
+    
+    MZFormSheetController *formSheet = [[MZFormSheetController alloc] initWithViewController:navigationController];
+    [formSheet setShouldDismissOnBackgroundViewTap:NO];
+    [formSheet setTransitionStyle:MZFormSheetTransitionStyleSlideFromBottom];
+    [formSheet setCornerRadius:5];
+    [formSheet setPortraitTopInset:20];
+    [formSheet setLandscapeTopInset:20];
+    
+    UIWindow *mainWindow = [[UIApplication sharedApplication] keyWindow];
+    CGSize size = mainWindow.frame.size;
+    size = CGSizeMake(size.width - 40, size.height - 60);
+    
+    [formSheet setPresentedFormSheetSize:size];
+    [formSheet setMovementWhenKeyboardAppears:MZFormSheetWhenKeyboardAppearsDoNothing];
+    [formSheet presentAnimated:YES completionHandler:nil];
+}
+
 #pragma mark - Refresh data
 
 - (void)refresh {
@@ -55,6 +83,9 @@
             
             float distance = [[[VPPLocationController sharedInstance] currentLocation] distanceFromLocation:[drop location]];
             TTTLocationFormatter *locationFormatter = [[TTTLocationFormatter alloc] init];
+            if ([[NSUserDefaults standardUserDefaults] integerForKey:@"unit"]) {
+                [locationFormatter setUnitSystem:TTTImperialSystem];
+            }
             [[self distanceLabel] setText:[locationFormatter stringFromDistance:distance]];
             
             if (distance <= 10) {
@@ -92,6 +123,18 @@
     [self mz_dismissFormSheetControllerAnimated:YES completionHandler:nil];
 }
 
+#pragma mark - Settings view controller delegate
+
+- (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController *)sender {
+    [self mz_dismissFormSheetControllerAnimated:YES completionHandler:nil];
+}
+
+- (void)settingDidChange:(NSNotification *)notification {
+	if ([[notification object] isEqual:@"unit"]) {
+		[self refresh];
+	}
+}
+
 #pragma mark - Location delegate
 
 - (void)locationUpdate:(CLLocation *)location {
@@ -118,7 +161,9 @@
     
     [self setTitle:NSLocalizedString(@"AppName", nil)];
     
-    UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Settings"] style:UIBarButtonItemStylePlain target:self action:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(settingDidChange:) name:kIASKAppSettingChanged object:nil];
+    
+    UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Settings"] style:UIBarButtonItemStylePlain target:self action:@selector(openSettings)];
     [[self navigationItem] setLeftBarButtonItem:settingsBarButtonItem];
     
     UIBarButtonItem *addBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Add"] style:UIBarButtonItemStylePlain target:self action:@selector(addDrop)];
@@ -129,9 +174,7 @@
     [[VPPLocationController sharedInstance] setStrictMode:YES];
     [[VPPLocationController sharedInstance] addLocationDelegate:self];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self refresh];
-    });
+    [self refresh];
 }
 
 @end

@@ -34,6 +34,7 @@
 		C093E901190C8CE40041D87A /* JTSDropDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */; };
 		C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */; };
 		C0DA663719175C5A00516373 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0DA663919175C5A00516373 /* Localizable.strings */; };
+		C0DA66401917685E00516373 /* InAppSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0DA663F1917685E00516373 /* InAppSettings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSDropDetailViewController.m; sourceTree = "<group>"; };
 		C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTSDropDetailViewController.xib; sourceTree = "<group>"; };
 		C0DA663819175C5A00516373 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C0DA663F1917685E00516373 /* InAppSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppSettings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				C013433F190C253F002C09D2 /* Jettison-Prefix.pch */,
 				C0DA663919175C5A00516373 /* Localizable.strings */,
 				C013433D190C253F002C09D2 /* main.m */,
+				C0DA663F1917685E00516373 /* InAppSettings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,17 +218,17 @@
 		C093E8DB190C35030041D87A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C093E8F5190C4BEA0041D87A /* JTSAddDropViewController.h */,
+				C093E8F6190C4BEA0041D87A /* JTSAddDropViewController.m */,
+				C093E8FE190C8CE40041D87A /* JTSDropDetailViewController.h */,
+				C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */,
+				C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */,
 				C093E8E1190C36460041D87A /* JTSHomeViewController.h */,
 				C093E8E2190C36460041D87A /* JTSHomeViewController.m */,
 				C093E8E3190C36460041D87A /* JTSHomeViewController.xib */,
 				C093E8DC190C351E0041D87A /* JTSLoginViewController.h */,
 				C093E8DD190C351E0041D87A /* JTSLoginViewController.m */,
 				C093E8DE190C351E0041D87A /* JTSLoginViewController.xib */,
-				C093E8F5190C4BEA0041D87A /* JTSAddDropViewController.h */,
-				C093E8F6190C4BEA0041D87A /* JTSAddDropViewController.m */,
-				C093E8FE190C8CE40041D87A /* JTSDropDetailViewController.h */,
-				C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */,
-				C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */,
 				C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */,
 				C0134344190C253F002C09D2 /* Images.xcassets in Resources */,
+				C0DA66401917685E00516373 /* InAppSettings.bundle in Resources */,
 				C093E8E5190C36460041D87A /* JTSHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
