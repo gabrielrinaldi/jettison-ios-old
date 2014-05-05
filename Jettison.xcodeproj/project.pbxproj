@@ -88,6 +88,7 @@
 		C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTSDropDetailViewController.xib; sourceTree = "<group>"; };
 		C0DA663819175C5A00516373 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C0DA663F1917685E00516373 /* InAppSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppSettings.bundle; sourceTree = "<group>"; };
+		C0DA66411917723300516373 /* Jettison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Jettison.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,11 +172,12 @@
 		C0134338190C253F002C09D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0DA663F1917685E00516373 /* InAppSettings.bundle */,
 				C0134339190C253F002C09D2 /* Jettison-Info.plist */,
 				C013433F190C253F002C09D2 /* Jettison-Prefix.pch */,
+				C0DA66411917723300516373 /* Jettison.entitlements */,
 				C0DA663919175C5A00516373 /* Localizable.strings */,
 				C013433D190C253F002C09D2 /* main.m */,
-				C0DA663F1917685E00516373 /* InAppSettings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -322,6 +324,11 @@
 				TargetAttributes = {
 					C013432D190C253F002C09D2 = {
 						DevelopmentTeam = Q9U23GRL6K;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					C0134348190C253F002C09D2 = {
 						TestTargetID = C013432D190C253F002C09D2;
@@ -548,7 +555,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Jettison/Jettison.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Azure",
@@ -558,6 +567,7 @@
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -568,7 +578,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Jettison/Jettison.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Azure",
@@ -578,6 +590,7 @@
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

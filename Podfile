@@ -7,6 +7,7 @@ target 'Jettison' do
   pod 'BZGFormViewController', '~> 2.3.2'
   pod 'Facebook-iOS-SDK', '~> 3.13.1'
   pod 'FormatterKit', '~> 1.4.2'
+  pod 'FTiCloudSync', '~> 0.0.1'
   pod 'InAppSettingsKit', '~> 2.0.1'
   pod 'MZFormSheetController', '~> 2.3.4'
   pod 'NewRelicAgent', '~> 3.289'

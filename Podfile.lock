@@ -22,6 +22,8 @@ PODS:
   - FormatterKit/TimeIntervalFormatter (1.4.2)
   - FormatterKit/UnitOfInformationFormatter (1.4.2)
   - FormatterKit/URLRequestFormatter (1.4.2)
+  - FTiCloudSync (0.0.1):
+    - RegexKitLite
   - InAppSettingsKit (2.0.1)
   - libextobjc (0.4):
     - libextobjc/EXTADT
@@ -69,6 +71,7 @@ PODS:
   - ReactiveCocoa/Core (2.3):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.3)
+  - RegexKitLite (4.0)
   - UICKeyChainStore (1.0.5)
   - VPPLocation (3.0.0)
 
@@ -77,6 +80,7 @@ DEPENDENCIES:
   - BZGFormViewController (~> 2.3.2)
   - Facebook-iOS-SDK (~> 3.13.1)
   - FormatterKit (~> 1.4.2)
+  - FTiCloudSync (~> 0.0.1)
   - InAppSettingsKit (~> 2.0.1)
   - MZFormSheetController (~> 2.3.4)
   - NewRelicAgent (~> 3.289)
@@ -88,6 +92,7 @@ SPEC CHECKSUMS:
   BZGFormViewController: 5b2c4931b5fc3ee749ddc227bc0eedf547fcd4d1
   Facebook-iOS-SDK: 47ae9e54684c84f93d75d4e6ab47cd031abdf406
   FormatterKit: 2c241963bc3bf3f2b52e82c0a8e29a8f9865bf3d
+  FTiCloudSync: 1dc0282dc7ed0985036962055d51560b2fbc4b11
   InAppSettingsKit: 5e42f626b9be9c33e3b04c0cc9523ca5eabe7ad3
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
   libPhoneNumber-iOS: 0d337bdaf8fcbd9e1bd864f62f67afbb27d81d82
@@ -95,6 +100,7 @@ SPEC CHECKSUMS:
   MZFormSheetController: 631fda39fe80df606a5a5c44b804a0c0edc5afd5
   NewRelicAgent: c851e3d60e2450c6c3052cf5ae96d5651e930bda
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
+  RegexKitLite: b16f029b518614394438e17b7d1df8bfa1e5a81e
   UICKeyChainStore: bf99e73603419dc706496dc23a3aae8a1c65cb83
   VPPLocation: f65971febd5cff93d7300428427a19d3d1e598a5
 
