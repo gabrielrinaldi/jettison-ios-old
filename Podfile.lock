@@ -5,6 +5,23 @@ PODS:
     - libPhoneNumber-iOS (~> 0.7)
     - ReactiveCocoa (~> 2.3)
   - Facebook-iOS-SDK (3.13.1)
+  - FormatterKit (1.4.2):
+    - FormatterKit/AddressFormatter
+    - FormatterKit/ArrayFormatter
+    - FormatterKit/ColorFormatter
+    - FormatterKit/LocationFormatter
+    - FormatterKit/OrdinalNumberFormatter
+    - FormatterKit/TimeIntervalFormatter
+    - FormatterKit/UnitOfInformationFormatter
+    - FormatterKit/URLRequestFormatter
+  - FormatterKit/AddressFormatter (1.4.2)
+  - FormatterKit/ArrayFormatter (1.4.2)
+  - FormatterKit/ColorFormatter (1.4.2)
+  - FormatterKit/LocationFormatter (1.4.2)
+  - FormatterKit/OrdinalNumberFormatter (1.4.2)
+  - FormatterKit/TimeIntervalFormatter (1.4.2)
+  - FormatterKit/UnitOfInformationFormatter (1.4.2)
+  - FormatterKit/URLRequestFormatter (1.4.2)
   - libextobjc (0.4):
     - libextobjc/EXTADT
     - libextobjc/EXTConcreteProtocol
@@ -58,6 +75,7 @@ DEPENDENCIES:
   - BZGFormField (~> 1.1.2)
   - BZGFormViewController (~> 2.3.2)
   - Facebook-iOS-SDK (~> 3.13.1)
+  - FormatterKit (~> 1.4.2)
   - MZFormSheetController (~> 2.3.4)
   - NewRelicAgent (~> 3.289)
   - UICKeyChainStore (~> 1.0.5)
@@ -67,6 +85,7 @@ SPEC CHECKSUMS:
   BZGFormField: 724478d1e795458c93ec166730386caa85752454
   BZGFormViewController: 5b2c4931b5fc3ee749ddc227bc0eedf547fcd4d1
   Facebook-iOS-SDK: 47ae9e54684c84f93d75d4e6ab47cd031abdf406
+  FormatterKit: 2c241963bc3bf3f2b52e82c0a8e29a8f9865bf3d
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
   libPhoneNumber-iOS: 0d337bdaf8fcbd9e1bd864f62f67afbb27d81d82
   MZAppearance: 490bcde824c00598eb62efe732f2786d9342b907

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
+#import <FormatterKit/TTTLocationFormatter.h>
 #import <MZFormSheetController/MZFormSheetController.h>
 #import <VPPLocation/VPPLocationController.h>
 #import "JTSDrop.h"
@@ -53,7 +54,9 @@
             JTSDrop *drop = items[0];
             
             float distance = [[[VPPLocationController sharedInstance] currentLocation] distanceFromLocation:[drop location]];
-            [[self distanceLabel] setText:[NSString stringWithFormat:@"%.0fm", distance]];
+            TTTLocationFormatter *locationFormatter = [[TTTLocationFormatter alloc] init];
+            [locationFormatter setUnitSystem:TTTImperialSystem]
+            [[self distanceLabel] setText:[locationFormatter stringFromDistance:distance]];
             
             if (distance <= 10) {
                 JTSDropDetailViewController *dropDetailViewController = [[JTSDropDetailViewController alloc] initWithNibName:@"JTSDropDetailViewController" bundle:nil];
@@ -114,7 +117,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"Jettison"];
+    [self setTitle:NSLocalizedString(@"AppName", nil)];
     
     UIBarButtonItem *addBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addDrop)];
     [[self navigationItem] setRightBarButtonItem:addBarButtonItem];

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Jettison
+
+  Created by Gabriel Rinaldi on 5/4/14.
+  Copyright (c) 2014 Jettison. All rights reserved.
+*/
+
+// Titles
+
+"AppName" = "Jettison";
