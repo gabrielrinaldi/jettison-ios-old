@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
-#import <AzureSDK-iOS/MSUser.h>
 #import <UICKeyChainStore/UICKeyChainStore.h>
 #import "JTSAzureClient.h"
 
@@ -51,7 +50,7 @@ static NSString * const kGRAAPIBaseURLString = @"https://jettison.azure-mobile.n
             }
         } else {
             [UICKeyChainStore setString:[user userId] forKey:@"userID"];
-            [UICKeyChainStore setString:token forKey:@"facebookID"];
+            [UICKeyChainStore setString:[user mobileServiceAuthenticationToken] forKey:@"facebookID"];
             
             if (completion) {
                 completion(nil);

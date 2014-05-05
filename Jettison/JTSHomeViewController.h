@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
+@import MapKit;
+
 #pragma mark JTSHomeViewController
 
-@interface JTSHomeViewController : UIViewController
+@interface JTSHomeViewController : UIViewController <MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *dropsMapView;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 
 @end

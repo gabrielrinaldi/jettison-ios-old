@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
-#import <AzureSDK-iOS/MSClient.h>
-
-@class MSUser;
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 
 #pragma mark JTSAzureClient
 

@@ -1,19 +1,76 @@
 PODS:
-  - AzureSDK-iOS (1.2.1)
+  - BZGFormField (1.1.2)
+  - BZGFormViewController (2.3.1):
+    - libextobjc (~> 0.4)
+    - ReactiveCocoa (~> 2.2.4)
   - Facebook-iOS-SDK (3.13.1)
+  - libextobjc (0.4):
+    - libextobjc/EXTADT
+    - libextobjc/EXTConcreteProtocol
+    - libextobjc/EXTKeyPathCoding
+    - libextobjc/EXTNil
+    - libextobjc/EXTSafeCategory
+    - libextobjc/EXTScope
+    - libextobjc/EXTSelectorChecking
+    - libextobjc/EXTSynthesize
+    - libextobjc/NSInvocation+EXT
+    - libextobjc/NSMethodSignature+EXT
+    - libextobjc/RuntimeExtensions
+    - libextobjc/UmbrellaHeader
+  - libextobjc/EXTADT (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4)
+  - libextobjc/UmbrellaHeader (0.4)
+  - MZAppearance (1.1.2)
+  - MZFormSheetController (2.3.4):
+    - MZAppearance (~> 1.1.2)
   - NewRelicAgent (3.289)
+  - ReactiveCocoa (2.2.4):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (2.2.4):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.2.4)
   - UICKeyChainStore (1.0.5)
+  - VPPLocation (3.0.0)
 
 DEPENDENCIES:
-  - AzureSDK-iOS (~> 1.2.1)
+  - BZGFormField (~> 1.1.2)
+  - BZGFormViewController (~> 2.3.1)
   - Facebook-iOS-SDK (~> 3.13.1)
+  - MZFormSheetController (~> 2.3.4)
   - NewRelicAgent (~> 3.289)
   - UICKeyChainStore (~> 1.0.5)
+  - VPPLocation (~> 3.0.0)
 
 SPEC CHECKSUMS:
-  AzureSDK-iOS: 38f2809a39f1fdd45d612305ef25c0b024fbc776
+  BZGFormField: 724478d1e795458c93ec166730386caa85752454
+  BZGFormViewController: 96c365e9eb19d09a901383b4c36cf0fdd499195c
   Facebook-iOS-SDK: 47ae9e54684c84f93d75d4e6ab47cd031abdf406
+  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
+  MZAppearance: 75bc6c786025c311ebc247b01e1dead5cd29f7c5
+  MZFormSheetController: e14169b86864f515905e3f2775b4d81a2fa836ac
   NewRelicAgent: c851e3d60e2450c6c3052cf5ae96d5651e930bda
+  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
   UICKeyChainStore: bf99e73603419dc706496dc23a3aae8a1c65cb83
+  VPPLocation: f65971febd5cff93d7300428427a19d3d1e598a5
 
 COCOAPODS: 0.32.1

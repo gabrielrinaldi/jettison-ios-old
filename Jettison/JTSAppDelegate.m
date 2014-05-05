@@ -8,6 +8,7 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 #import <NewRelicAgent/NewRelic.h>
+#import <VPPLocation/VPPLocationController.h>
 #import "JTSAzureClient.h"
 #import "JTSHomeViewController.h"
 #import "JTSLoginViewController.h"
@@ -29,9 +30,10 @@
     [FBLoginView class];
     
     JTSHomeViewController *homeViewController = [[JTSHomeViewController alloc] initWithNibName:@"JTSHomeViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [window setRootViewController:homeViewController];
+    [window setRootViewController:navigationController];
     
     [self setWindow:window];
     [[self window] makeKeyAndVisible];
@@ -43,6 +45,14 @@
     }
     
     return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[VPPLocationController sharedInstance] resumeUpdatingLocation];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [[VPPLocationController sharedInstance] pauseUpdatingLocation];
 }
 
 #pragma mark - URL handling

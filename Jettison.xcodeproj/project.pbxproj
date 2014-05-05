@@ -25,6 +25,14 @@
 		C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E8DE190C351E0041D87A /* JTSLoginViewController.xib */; };
 		C093E8E4190C36460041D87A /* JTSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8E2190C36460041D87A /* JTSHomeViewController.m */; };
 		C093E8E5190C36460041D87A /* JTSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E8E3190C36460041D87A /* JTSHomeViewController.xib */; };
+		C093E8E9190C3C650041D87A /* JTSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8E8190C3C650041D87A /* JTSModel.m */; };
+		C093E8EC190C3D2F0041D87A /* JTSDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8EB190C3D2F0041D87A /* JTSDrop.m */; };
+		C093E8EE190C3D750041D87A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C093E8ED190C3D750041D87A /* MapKit.framework */; };
+		C093E8F3190C418F0041D87A /* WindowsAzureMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C093E8F1190C418F0041D87A /* WindowsAzureMessaging.framework */; };
+		C093E8F4190C418F0041D87A /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C093E8F2190C418F0041D87A /* WindowsAzureMobileServices.framework */; };
+		C093E8F8190C4BEA0041D87A /* JTSAddDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8F6190C4BEA0041D87A /* JTSAddDropViewController.m */; };
+		C093E901190C8CE40041D87A /* JTSDropDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */; };
+		C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,18 @@
 		C093E8E1190C36460041D87A /* JTSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSHomeViewController.h; sourceTree = "<group>"; };
 		C093E8E2190C36460041D87A /* JTSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSHomeViewController.m; sourceTree = "<group>"; };
 		C093E8E3190C36460041D87A /* JTSHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTSHomeViewController.xib; sourceTree = "<group>"; };
+		C093E8E7190C3C650041D87A /* JTSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSModel.h; sourceTree = "<group>"; };
+		C093E8E8190C3C650041D87A /* JTSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSModel.m; sourceTree = "<group>"; };
+		C093E8EA190C3D2F0041D87A /* JTSDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSDrop.h; sourceTree = "<group>"; };
+		C093E8EB190C3D2F0041D87A /* JTSDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSDrop.m; sourceTree = "<group>"; };
+		C093E8ED190C3D750041D87A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C093E8F1190C418F0041D87A /* WindowsAzureMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMessaging.framework; sourceTree = "<group>"; };
+		C093E8F2190C418F0041D87A /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		C093E8F5190C4BEA0041D87A /* JTSAddDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSAddDropViewController.h; sourceTree = "<group>"; };
+		C093E8F6190C4BEA0041D87A /* JTSAddDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSAddDropViewController.m; sourceTree = "<group>"; };
+		C093E8FE190C8CE40041D87A /* JTSDropDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSDropDetailViewController.h; sourceTree = "<group>"; };
+		C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSDropDetailViewController.m; sourceTree = "<group>"; };
+		C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTSDropDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +91,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C093E8EE190C3D750041D87A /* MapKit.framework in Frameworks */,
 				C0134334190C253F002C09D2 /* CoreGraphics.framework in Frameworks */,
 				C0134336190C253F002C09D2 /* UIKit.framework in Frameworks */,
+				C093E8F4190C418F0041D87A /* WindowsAzureMobileServices.framework in Frameworks */,
 				C0134332190C253F002C09D2 /* Foundation.framework in Frameworks */,
 				10F1CACBA967417AB3FAFC06 /* libPods-Jettison.a in Frameworks */,
+				C093E8F3190C418F0041D87A /* WindowsAzureMessaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				C0134337190C253F002C09D2 /* Jettison */,
-				C0134350190C253F002C09D2 /* JettisonTests */,
 				C0134330190C253F002C09D2 /* Frameworks */,
+				C093E8EF190C418F0041D87A /* Vendor */,
+				C0134350190C253F002C09D2 /* JettisonTests */,
 				C013432F190C253F002C09D2 /* Products */,
 				2CF7943307F54CDF8A6C414A /* Pods-Jettison.xcconfig */,
 			);
@@ -114,11 +138,12 @@
 		C0134330190C253F002C09D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0134331190C253F002C09D2 /* Foundation.framework */,
 				C0134333190C253F002C09D2 /* CoreGraphics.framework */,
+				C0134331190C253F002C09D2 /* Foundation.framework */,
+				57E26BEBA8E64392B37C280B /* libPods-Jettison.a */,
+				C093E8ED190C3D750041D87A /* MapKit.framework */,
 				C0134335190C253F002C09D2 /* UIKit.framework */,
 				C013434A190C253F002C09D2 /* XCTest.framework */,
-				57E26BEBA8E64392B37C280B /* libPods-Jettison.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,13 +151,14 @@
 		C0134337190C253F002C09D2 /* Jettison */ = {
 			isa = PBXGroup;
 			children = (
-				C093E8D7190C31DA0041D87A /* Classes */,
-				C0134343190C253F002C09D2 /* Images.xcassets */,
 				C0134340190C253F002C09D2 /* JTSAppDelegate.h */,
 				C0134341190C253F002C09D2 /* JTSAppDelegate.m */,
+				C093E8D7190C31DA0041D87A /* Classes */,
+				C0134343190C253F002C09D2 /* Images.xcassets */,
 				C093E8E6190C3B090041D87A /* Models */,
-				C0134338190C253F002C09D2 /* Supporting Files */,
 				C093E8DB190C35030041D87A /* View Controllers */,
+				C093E8FA190C7D590041D87A /* Views */,
+				C0134338190C253F002C09D2 /* Supporting Files */,
 			);
 			path = Jettison;
 			sourceTree = "<group>";
@@ -184,6 +210,11 @@
 				C093E8DC190C351E0041D87A /* JTSLoginViewController.h */,
 				C093E8DD190C351E0041D87A /* JTSLoginViewController.m */,
 				C093E8DE190C351E0041D87A /* JTSLoginViewController.xib */,
+				C093E8F5190C4BEA0041D87A /* JTSAddDropViewController.h */,
+				C093E8F6190C4BEA0041D87A /* JTSAddDropViewController.m */,
+				C093E8FE190C8CE40041D87A /* JTSDropDetailViewController.h */,
+				C093E8FF190C8CE40041D87A /* JTSDropDetailViewController.m */,
+				C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -191,8 +222,36 @@
 		C093E8E6190C3B090041D87A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C093E8EA190C3D2F0041D87A /* JTSDrop.h */,
+				C093E8EB190C3D2F0041D87A /* JTSDrop.m */,
+				C093E8E7190C3C650041D87A /* JTSModel.h */,
+				C093E8E8190C3C650041D87A /* JTSModel.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		C093E8EF190C418F0041D87A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C093E8F0190C418F0041D87A /* Azure */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		C093E8F0190C418F0041D87A /* Azure */ = {
+			isa = PBXGroup;
+			children = (
+				C093E8F1190C418F0041D87A /* WindowsAzureMessaging.framework */,
+				C093E8F2190C418F0041D87A /* WindowsAzureMobileServices.framework */,
+			);
+			path = Azure;
+			sourceTree = "<group>";
+		};
+		C093E8FA190C7D590041D87A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +304,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Jettison;
 				TargetAttributes = {
+					C013432D190C253F002C09D2 = {
+						DevelopmentTeam = Q9U23GRL6K;
+					};
 					C0134348190C253F002C09D2 = {
 						TestTargetID = C013432D190C253F002C09D2;
 					};
@@ -273,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */,
 				C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */,
 				C013433C190C253F002C09D2 /* InfoPlist.strings in Resources */,
 				C0134344190C253F002C09D2 /* Images.xcassets in Resources */,
@@ -330,8 +393,12 @@
 			files = (
 				C093E8E4190C36460041D87A /* JTSHomeViewController.m in Sources */,
 				C093E8DF190C351E0041D87A /* JTSLoginViewController.m in Sources */,
+				C093E901190C8CE40041D87A /* JTSDropDetailViewController.m in Sources */,
 				C093E8DA190C32090041D87A /* JTSAzureClient.m in Sources */,
+				C093E8E9190C3C650041D87A /* JTSModel.m in Sources */,
+				C093E8F8190C4BEA0041D87A /* JTSAddDropViewController.m in Sources */,
 				C0134342190C253F002C09D2 /* JTSAppDelegate.m in Sources */,
+				C093E8EC190C3D2F0041D87A /* JTSDrop.m in Sources */,
 				C013433E190C253F002C09D2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -438,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -450,6 +517,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Azure",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
@@ -464,6 +536,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Azure",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
 				INFOPLIST_FILE = "Jettison/Jettison-Info.plist";
