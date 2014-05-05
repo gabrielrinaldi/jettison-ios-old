@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jettison. All rights reserved.
 //
 
+#import <Crashlytics/Crashlytics.h>
 #import <FacebookSDK/FacebookSDK.h>
 #import <NewRelicAgent/NewRelic.h>
 #import <VPPLocation/VPPLocationController.h>
@@ -25,6 +26,8 @@
 #pragma mark - Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Crashlytics startWithAPIKey:@"131c48cd3aa4014211c76edd0d36ed0f0b40e5c1"];
+    
     [NewRelicAgent startWithApplicationToken:@"AA404ff93837ef6ca500351d34ed789f98381e02da"];
     
     [FBLoginView class];

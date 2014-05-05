@@ -20,6 +20,7 @@
 		C013434D190C253F002C09D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134335190C253F002C09D2 /* UIKit.framework */; };
 		C0134355190C253F002C09D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0134353190C253F002C09D2 /* InfoPlist.strings */; };
 		C0134357190C253F002C09D2 /* JettisonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0134356190C253F002C09D2 /* JettisonTests.m */; };
+		C03C5BEF19174C8800EDDAB8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03C5BEE19174C8800EDDAB8 /* Crashlytics.framework */; };
 		C093E8DA190C32090041D87A /* JTSAzureClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8D9190C32090041D87A /* JTSAzureClient.m */; };
 		C093E8DF190C351E0041D87A /* JTSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C093E8DD190C351E0041D87A /* JTSLoginViewController.m */; };
 		C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E8DE190C351E0041D87A /* JTSLoginViewController.xib */; };
@@ -64,6 +65,7 @@
 		C0134352190C253F002C09D2 /* JettisonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JettisonTests-Info.plist"; sourceTree = "<group>"; };
 		C0134354190C253F002C09D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0134356190C253F002C09D2 /* JettisonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JettisonTests.m; sourceTree = "<group>"; };
+		C03C5BEE19174C8800EDDAB8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		C093E8D8190C32090041D87A /* JTSAzureClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSAzureClient.h; sourceTree = "<group>"; };
 		C093E8D9190C32090041D87A /* JTSAzureClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSAzureClient.m; sourceTree = "<group>"; };
 		C093E8DC190C351E0041D87A /* JTSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSLoginViewController.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			files = (
 				C093E8EE190C3D750041D87A /* MapKit.framework in Frameworks */,
 				C0134334190C253F002C09D2 /* CoreGraphics.framework in Frameworks */,
+				C03C5BEF19174C8800EDDAB8 /* Crashlytics.framework in Frameworks */,
 				C0134336190C253F002C09D2 /* UIKit.framework in Frameworks */,
 				C093E8F4190C418F0041D87A /* WindowsAzureMobileServices.framework in Frameworks */,
 				C0134332190C253F002C09D2 /* Foundation.framework in Frameworks */,
@@ -192,6 +195,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C03C5BED19174C8800EDDAB8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				C03C5BEE19174C8800EDDAB8 /* Crashlytics.framework */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
 		C093E8D7190C31DA0041D87A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				C093E8F0190C418F0041D87A /* Azure */,
+				C03C5BED19174C8800EDDAB8 /* Crashlytics */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -266,6 +278,7 @@
 				C013432B190C253F002C09D2 /* Frameworks */,
 				C013432C190C253F002C09D2 /* Resources */,
 				F9E06067C920429F9209403D /* Copy Pods Resources */,
+				C03C5BEC19174C5800EDDAB8 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -368,6 +381,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		C03C5BEC19174C5800EDDAB8 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Vendor/Crashlytics/Crashlytics.framework/run 131c48cd3aa4014211c76edd0d36ed0f0b40e5c1 886d69a43bab48a73859860f5af0d39c5e93f4f63be05acaa45d6c2b12d5e266";
 		};
 		F9E06067C920429F9209403D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -521,6 +548,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Azure",
+					"$(PROJECT_DIR)/Vendor/Crashlytics",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
@@ -540,6 +568,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Azure",
+					"$(PROJECT_DIR)/Vendor/Crashlytics",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jettison/Jettison-Prefix.pch";
