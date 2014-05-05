@@ -55,7 +55,6 @@
             
             float distance = [[[VPPLocationController sharedInstance] currentLocation] distanceFromLocation:[drop location]];
             TTTLocationFormatter *locationFormatter = [[TTTLocationFormatter alloc] init];
-            [locationFormatter setUnitSystem:TTTImperialSystem]
             [[self distanceLabel] setText:[locationFormatter stringFromDistance:distance]];
             
             if (distance <= 10) {
@@ -119,7 +118,10 @@
     
     [self setTitle:NSLocalizedString(@"AppName", nil)];
     
-    UIBarButtonItem *addBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addDrop)];
+    UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Settings"] style:UIBarButtonItemStylePlain target:self action:nil];
+    [[self navigationItem] setLeftBarButtonItem:settingsBarButtonItem];
+    
+    UIBarButtonItem *addBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Add"] style:UIBarButtonItemStylePlain target:self action:@selector(addDrop)];
     [[self navigationItem] setRightBarButtonItem:addBarButtonItem];
     
     [[VPPLocationController sharedInstance] setShouldRejectRepeatedLocations:YES];
