@@ -11,7 +11,6 @@
 		C0134332190C253F002C09D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134331190C253F002C09D2 /* Foundation.framework */; };
 		C0134334190C253F002C09D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134333190C253F002C09D2 /* CoreGraphics.framework */; };
 		C0134336190C253F002C09D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0134335190C253F002C09D2 /* UIKit.framework */; };
-		C013433C190C253F002C09D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C013433A190C253F002C09D2 /* InfoPlist.strings */; };
 		C013433E190C253F002C09D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C013433D190C253F002C09D2 /* main.m */; };
 		C0134342190C253F002C09D2 /* JTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0134341190C253F002C09D2 /* JTSAppDelegate.m */; };
 		C0134344190C253F002C09D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0134343190C253F002C09D2 /* Images.xcassets */; };
@@ -54,7 +53,6 @@
 		C0134333190C253F002C09D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C0134335190C253F002C09D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0134339190C253F002C09D2 /* Jettison-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jettison-Info.plist"; sourceTree = "<group>"; };
-		C013433B190C253F002C09D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C013433D190C253F002C09D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C013433F190C253F002C09D2 /* Jettison-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jettison-Prefix.pch"; sourceTree = "<group>"; };
 		C0134340190C253F002C09D2 /* JTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSAppDelegate.h; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				C0134339190C253F002C09D2 /* Jettison-Info.plist */,
-				C013433A190C253F002C09D2 /* InfoPlist.strings */,
 				C013433D190C253F002C09D2 /* main.m */,
 				C013433F190C253F002C09D2 /* Jettison-Prefix.pch */,
 			);
@@ -350,7 +347,6 @@
 			files = (
 				C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */,
 				C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */,
-				C013433C190C253F002C09D2 /* InfoPlist.strings in Resources */,
 				C0134344190C253F002C09D2 /* Images.xcassets in Resources */,
 				C093E8E5190C36460041D87A /* JTSHomeViewController.xib in Resources */,
 			);
@@ -449,14 +445,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C013433A190C253F002C09D2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C013433B190C253F002C09D2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		C0134353190C253F002C09D2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
