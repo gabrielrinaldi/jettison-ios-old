@@ -74,8 +74,8 @@
 
 - (void)updateDefaults {
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
-    NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
-    NSString *build = [infoDict objectForKey:@"CFBundleShortVersionString"];
+    NSString *build = [infoDict objectForKey:@"CFBundleVersion"];
+    NSString *version = [infoDict objectForKey:@"CFBundleShortVersionString"];
     
     [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@ (%@)", version, build] forKey:@"version"];
     [[NSUserDefaults standardUserDefaults] synchronize];

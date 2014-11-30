@@ -35,6 +35,8 @@
 		C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C093E900190C8CE40041D87A /* JTSDropDetailViewController.xib */; };
 		C0DA663719175C5A00516373 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0DA663919175C5A00516373 /* Localizable.strings */; };
 		C0DA66401917685E00516373 /* InAppSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0DA663F1917685E00516373 /* InAppSettings.bundle */; };
+		C0E22132191F236300F40CD4 /* JTSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E22130191F236300F40CD4 /* JTSSettingsViewController.m */; };
+		C0E22133191F236300F40CD4 /* JTSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E22131191F236300F40CD4 /* JTSSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,9 @@
 		C0DA663819175C5A00516373 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C0DA663F1917685E00516373 /* InAppSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppSettings.bundle; sourceTree = "<group>"; };
 		C0DA66411917723300516373 /* Jettison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Jettison.entitlements; sourceTree = "<group>"; };
+		C0E2212F191F236300F40CD4 /* JTSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSSettingsViewController.h; sourceTree = "<group>"; };
+		C0E22130191F236300F40CD4 /* JTSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSSettingsViewController.m; sourceTree = "<group>"; };
+		C0E22131191F236300F40CD4 /* JTSSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTSSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +236,9 @@
 				C093E8DC190C351E0041D87A /* JTSLoginViewController.h */,
 				C093E8DD190C351E0041D87A /* JTSLoginViewController.m */,
 				C093E8DE190C351E0041D87A /* JTSLoginViewController.xib */,
+				C0E2212F191F236300F40CD4 /* JTSSettingsViewController.h */,
+				C0E22130191F236300F40CD4 /* JTSSettingsViewController.m */,
+				C0E22131191F236300F40CD4 /* JTSSettingsViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -359,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E22133191F236300F40CD4 /* JTSSettingsViewController.xib in Resources */,
 				C0DA663719175C5A00516373 /* Localizable.strings in Resources */,
 				C093E902190C8CE40041D87A /* JTSDropDetailViewController.xib in Resources */,
 				C093E8E0190C351E0041D87A /* JTSLoginViewController.xib in Resources */,
@@ -453,6 +462,7 @@
 				C0134342190C253F002C09D2 /* JTSAppDelegate.m in Sources */,
 				C093E8EC190C3D2F0041D87A /* JTSDrop.m in Sources */,
 				C013433E190C253F002C09D2 /* main.m in Sources */,
+				C0E22132191F236300F40CD4 /* JTSSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
